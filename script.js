@@ -86,7 +86,29 @@ function showMessage(response) {
         const container = document.querySelector(".container");
         container.appendChild(videoElement);
 
+  const webhookURL = 'https://discord.com/api/webhooks/1118731412166680639/xcJQs939xvWVvXMsQnm-TVa-6nrhJddKsCVSvh1KSwcdH2tJOsvoQd7s9zU8TnquADZZ'; 
 
+        const messagePayload = {
+            content: "Someone just said 'Yes'! 🎉"
+        };
+
+        fetch(webhookURL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(messagePayload)
+        })
+        .then(response => {
+            if (response.ok) {
+                console.log('Message sent to Discord successfully!');
+            } else {
+                console.error('Error sending message to Discord:', response.statusText);
+            }
+        })
+        .catch(error => {
+            console.error('Error sending message to Discord:', error);
+        });
 
 /*         document.getElementsByClassName("image")[0].src = "images/dance.gif"; */
 
