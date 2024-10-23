@@ -36,7 +36,7 @@ function showMessage(response) {
             document.getElementsByClassName("image2")[0].style.display = "none";
 
         } else {
-            document.getElementsByClassName("image")[0].src = "./images/cat-cats.gif";
+            document.getElementsByClassName("image")[0].src = "/images/cat-cats.gif";
             const questionElement = document.getElementById("question");
             questionElement.textContent =  "Okay Pookie, sorry for insisting so much. Of course I respect your boundaries and I'm sorry if I was being too pushy. I hope you have a fantastic Valentine's Day! And don't forget to drink water 🥛"
             questionElement.className = "message-text";
@@ -78,7 +78,7 @@ function showMessage(response) {
         videoElement.setAttribute("height", "480");
         videoElement.setAttribute("controls", "");
         videoElement.setAttribute("autoplay", "");
-        videoElement.setAttribute("src", "./images/happyFish.mp4");
+        videoElement.setAttribute("src", "images/happyFish.mp4");
         videoElement.innerHTML = "Your browser does not support the video tag.";
 
         videoElement.className = "responsive-video";
