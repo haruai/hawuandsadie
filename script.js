@@ -64,7 +64,7 @@ function showMessage(response) {
         document.getElementById("yesButton").remove();
 
         const yesMessage = document.getElementById("question");
-        yesMessage.textContent = "YESSSSS, I have more surprises for you in the future!";
+        yesMessage.textContent = "YESSSSS, I have more surprises for you here in the future!";
         yesMessage.style.display = "block";
         yesMessage.style.fontStyle = "normal";
 
