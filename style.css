@@ -1,5 +1,5 @@
 body{
-    background: url(/images/5.png);
+    background: url(./images/5.png);
     background-repeat: no-repeat;
     /* To cover 100% of the screen and fixed */
     background-size: cover;
